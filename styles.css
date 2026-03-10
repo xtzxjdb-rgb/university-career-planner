@@ -163,6 +163,59 @@ header .subtitle {
   border-left: 3px solid #9b59b6;
 }
 
+.dachuang-task {
+  color: #e67e22;
+  font-size: 0.9em;
+  padding-left: 10px;
+  border-left: 3px solid #e67e22;
+}
+
+.baoyan-task {
+  color: #e74c3c;
+  font-size: 0.9em;
+  padding-left: 10px;
+  border-left: 3px solid #e74c3c;
+}
+
+.kaoyan-task {
+  color: #2c3e50;
+  font-size: 0.9em;
+  padding-left: 10px;
+  border-left: 3px solid #2c3e50;
+}
+
+.liuxue-task {
+  color: #16a085;
+  font-size: 0.9em;
+  padding-left: 10px;
+  border-left: 3px solid #16a085;
+}
+
+.jingsai-task {
+  color: #e91e63;
+  font-size: 0.9em;
+  padding-left: 10px;
+  border-left: 3px solid #e91e63;
+}
+
+/* 颜色图例 */
+.color-legend {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 10px 0 20px 0;
+  padding: 10px 20px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.color-legend .legend-item {
+  font-size: 0.95em;
+  font-weight: 500;
+}
+
 .file-link {
   color: #3498db;
   text-decoration: none;
@@ -493,6 +546,89 @@ footer {
 
 .semester-content::-webkit-scrollbar-thumb:hover {
   background: #a8a8a8;
+}
+
+/* 竞赛弹窗表格样式 */
+.competition-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95em;
+}
+
+.competition-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.competition-table th {
+  padding: 12px 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.competition-table td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.competition-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.competition-table tbody tr:nth-child(even) {
+  background: #fafbfc;
+}
+
+.competition-table tbody tr:nth-child(even):hover {
+  background: #f0f1f3;
+}
+
+.comp-id {
+  text-align: center;
+  font-weight: bold;
+  color: #667eea;
+  width: 50px;
+}
+
+.comp-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.comp-month {
+  text-align: center;
+  white-space: nowrap;
+  color: #666;
+}
+
+.comp-link {
+  word-break: break-all;
+}
+
+.competition-link {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: color 0.2s ease;
+}
+
+.competition-link:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.competition-link.file-download {
+  color: #e74c3c;
+  font-weight: 500;
+}
+
+.competition-link.file-download::before {
+  content: '\1F4E5 ';
+}
+
+.competition-link.file-download:hover {
+  color: #c0392b;
 }
 
 /* 响应式 */
